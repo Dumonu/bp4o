@@ -20,7 +20,7 @@
 
     <section class="main-content">
       <h1>
-<a id="better-output" class="anchor" href="#better-output" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Better Output!</h1>
+<a id="better-ouput" class="anchor" href="#better-ouput" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Better Ouput!</h1>
 
 <p>BP4O turns output like this...</p>
 
@@ -37,15 +37,17 @@
 
 <p><img src="http://i.imgur.com/5jGjV7K.png" alt="colordiff"></p>
 
-<p>To get colored diffs, install <a href="http://www.colordiff.org/">colordiff</a> and leave <code>P4DIFF</code> unset.</p>
+<p>To get colored diffs, install <a href="http://www.colordiff.org/">colordiff</a> and unset <code>P4DIFF</code>.</p>
 
 <h1>
 <a id="aliases" class="anchor" href="#aliases" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Aliases!</h1>
 
-<p>BP4O allows you to create aliases for p4 commands</p>
+<p>BP4O works with most basic <a href="https://www.perforce.com/perforce/r16.1/manuals/cmdref/chapter.introduction.html#introduction.aliases">Perforce aliases</a>!</p>
 
-<p>Add a file named <code>aliases</code> to <code>~/.config/bp4o/</code> or <code>$XDG_CONFIG_HOME/bp4o/</code>.
-Each line of the file is treated as an alias with the syntax <code>&lt;alias&gt; = &lt;command&gt;</code>.</p>
+<p>BP4O also provides its own aliasing for p4 clients that don't support Perforce aliases:</p>
+
+<p>Add a file named <code>aliases</code> to <code>~/.config/bp4o/</code>.
+Each line of <code>~/.config/bp4o/aliases</code> is treated as an alias with the syntax <code>&lt;alias&gt; = &lt;command&gt;</code>.</p>
 
 <p>e.g.</p>
 
@@ -62,6 +64,13 @@ log = changes -s submitted -l</pre></div>
 
 <div class="highlight highlight-source-shell"><pre>brew tap zachwhaley/beer
 brew install bp4o</pre></div>
+
+<h2>
+<a id="ubuntu" class="anchor" href="#ubuntu" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Ubuntu</h2>
+
+<div class="highlight highlight-source-shell"><pre>sudo add-apt-repository ppa:zachwhaley/ppa
+sudo apt update
+sudo apt install bp4o</pre></div>
 
 <h2>
 <a id="linux" class="anchor" href="#linux" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Linux</h2>
