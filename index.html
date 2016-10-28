@@ -73,9 +73,21 @@ sudo apt update
 sudo apt install bp4o</pre></div>
 
 <h2>
-<a id="linux" class="anchor" href="#linux" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Linux</h2>
+<a id="fedora" class="anchor" href="#fedora" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Fedora</h2>
 
-<p><a href="https://github.com/zachwhaley/bp4o/blob/master/README.md#linux">install.sh</a></p>
+<div class="highlight highlight-source-shell"><pre>sudo dnf copr <span class="pl-c1">enable</span> zachwhaley/bp4o
+sudo dnf install bp4o</pre></div>
+
+<h2>
+<a id="zsh-users" class="anchor" href="#zsh-users" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Zsh Users</h2>
+
+<p>You might need to source the BP4O init script in <code>/etc/profile.d/</code></p>
+
+<p>Add this to your <code>/.zprofile</code></p>
+
+<div class="highlight highlight-source-shell"><pre><span class="pl-k">if</span> [ <span class="pl-k">-f</span> /etc/profile.d/bp4o.zsh ]<span class="pl-k">;</span> <span class="pl-k">then</span>
+    <span class="pl-c1">source</span> /etc/profile.d/bp4o.zsh
+<span class="pl-k">fi</span></pre></div>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/zachwhaley/bp4o">BP4O</a> is maintained by <a href="https://github.com/zachwhaley">zachwhaley</a>.</span>
