@@ -1,0 +1,72 @@
+# Better Ouput!
+
+BP4O turns output like this...
+
+![meh](http://i.imgur.com/euoNBOw.png)
+
+Into this!
+
+![WOW](http://i.imgur.com/atCFBp6.png)
+
+# Colored Diffs!
+
+BP4O will use [colordiff](http://www.colordiff.org/) to output diffs in color from commands like `p4 diff` and `p4 describe`
+
+![colordiff](http://i.imgur.com/5jGjV7K.png)
+
+To get colored diffs, install [colordiff](http://www.colordiff.org/) and unset `P4DIFF`.
+
+# Aliases!
+
+BP4O works with most basic [Perforce aliases](https://www.perforce.com/perforce/r16.1/manuals/cmdref/chapter.introduction.html#introduction.aliases)!
+
+BP4O also provides its own aliasing for p4 clients that don't support Perforce aliases:
+
+Add a file named `aliases` to `~/.config/bp4o/`.
+Each line of `~/.config/bp4o/aliases` is treated as an alias with the syntax `<alias> = <command>`.
+
+e.g.
+
+```shell
+ch = change
+op = opened
+su = submit
+log = changes -s submitted -l
+```
+
+# Install!
+
+## macOS
+
+```shell
+brew tap zachwhaley/beer
+brew install bp4o
+```
+
+## Ubuntu
+
+```shell
+sudo add-apt-repository ppa:zachwhaley/ppa
+sudo apt update
+sudo apt install bp4o
+```
+
+## Fedora
+
+```shell
+sudo dnf copr enable zachwhaley/bp4o
+sudo dnf install bp4o
+```
+
+## Manually
+
+See [README](https://github.com/zachwhaley/bp4o#others)
+
+## Zsh Users
+
+Load BP4O by adding this to your `~/.zshrc`:
+
+```shell
+autoload -Uz bp4o
+bp4o
+```
