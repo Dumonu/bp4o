@@ -1,18 +1,10 @@
 # Better Ouput!
 
-BP4O turns output like this...
-
-![meh](http://i.imgur.com/euoNBOw.png)
-
-Into this!
-
-![WOW](http://i.imgur.com/atCFBp6.png)
+<script type="text/javascript" src="https://asciinema.org/a/96884.js" id="asciicast-96884" async></script>
 
 # Colored Diffs!
 
 BP4O will use [colordiff](http://www.colordiff.org/) to output diffs in color from commands like `p4 diff` and `p4 describe`
-
-![colordiff](http://i.imgur.com/5jGjV7K.png)
 
 To get colored diffs, install [colordiff](http://www.colordiff.org/) and unset `P4DIFF`.
 
