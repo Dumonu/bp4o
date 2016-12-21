@@ -19,7 +19,7 @@ Each line of `~/.config/bp4o/aliases` is treated as an alias with the syntax `<a
 
 e.g.
 
-```shell
+```
 ch = change
 op = opened
 su = submit
@@ -30,14 +30,14 @@ log = changes -s submitted -l
 
 ## macOS
 
-```shell
+```
 brew tap zachwhaley/beer
 brew install bp4o
 ```
 
 ## Ubuntu
 
-```shell
+```
 sudo add-apt-repository ppa:zachwhaley/ppa
 sudo apt update
 sudo apt install bp4o
@@ -45,7 +45,7 @@ sudo apt install bp4o
 
 ## Fedora
 
-```shell
+```
 sudo dnf copr enable zachwhaley/bp4o
 sudo dnf install bp4o
 ```
@@ -58,7 +58,7 @@ See [README](https://github.com/zachwhaley/bp4o#others)
 
 Load BP4O by adding this to your `~/.zshrc`:
 
-```shell
+```
 autoload -Uz bp4o
 bp4o
 ```
