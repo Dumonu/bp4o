@@ -2,7 +2,7 @@ title: BP4O
 description: Better P4 Output
 google_analytics: 
 show_downloads: true
-theme: jekyll-theme-midnight
+theme: jekyll-theme-cayman
 
 gems:
   - jekyll-mentions
