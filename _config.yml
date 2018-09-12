@@ -3,6 +3,9 @@ description: Better P4 Output
 google_analytics: 
 show_downloads: true
 theme: jekyll-theme-cayman
+github:
+  zip_url: https://github.com/zachwhaley/bp4o/zipball/v1.1.1
+  tar_url: https://github.com/zachwhaley/bp4o/tarball/v1.1.1
 
 gems:
   - jekyll-mentions
